@@ -83,7 +83,7 @@ if not st.session_state.logged_in:
         <h1 style='
             text-align: center; 
             width: 100%;
-            padding-left: 33px;  /* 이 숫자를 늘리면 오른쪽으로 조금씩 더 이동합니다 */
+            padding-left: 32px;  /* 이 숫자를 늘리면 오른쪽으로 조금씩 더 이동합니다 */
             color: #1A3482; 
             font-size: 3rem; 
             font-weight: 700; 
