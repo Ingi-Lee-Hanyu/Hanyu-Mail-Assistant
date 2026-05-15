@@ -225,7 +225,6 @@ else:
     # 메인 제목 (HANYU 로고와 동일한 네이비 색상 적용)
     st.markdown("""
         <h1 style='text-align: center; 
-                margin-left: 25px; 
                 font-size: 50px; 
                 margin-bottom: 40px;
                 color: #1A3482;  /* 로고의 짙은 네이비 색상 */
