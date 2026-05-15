@@ -80,7 +80,7 @@ if not st.session_state.logged_in:
         st.markdown("<br>", unsafe_allow_html=True)
     # --- 로그인 화면 ---
     st.markdown("""
-            <h1 style='margin-right: 1px; color: #1A3482; font-size: 3rem; font-weight: 700; margin-bottom: 0px;'>
+            <h1 style='margin-right: 55px; color: #1A3482; font-size: 3rem; font-weight: 700; margin-bottom: 0px;'>
                 한유 AI 메일 비서
             </h1>
             """, unsafe_allow_html=True)
