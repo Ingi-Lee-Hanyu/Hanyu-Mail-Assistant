@@ -10,8 +10,6 @@ import os
 import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 
-st.set_page_config(page_title="한유 AI 메일 비서", page_icon="Logo_Hanyu.jpg")
-
 # 썸네일을 로고 이미지로 강제 고정
 st.set_page_config(
     page_title="한유 AI 메일 비서",
