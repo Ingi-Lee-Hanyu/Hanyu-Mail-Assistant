@@ -13,15 +13,15 @@ from google.generativeai.types import HarmCategory, HarmBlockThreshold
 st.set_page_config(page_title="한유 AI 메일 비서", page_icon="Logo_Hanyu.jpg")
 
 # 썸네일을 로고 이미지로 강제 고정
-st.markdown("""
-    <head>
-        <meta property="og:image" content="https://raw.githubusercontent.com/Ingi-Lee-Hanyu/Hanyu-Mail-Assistant/main/Logo_Hanyu.jpg">
-        <meta property="og:image:width" content="800">
-        <meta property="og:image:height" content="400">
-        <meta property="og:title" content="한유 AI 메일 비서">
-        <meta property="og:description" content="한유 그룹 전용 AI 메일 요약 서비스">
-    </head>
-    """, unsafe_allow_html=True)
+st.set_page_config(
+    page_title="한유 AI 메일 비서",
+    page_icon="Logo_Hanyu.jpg",
+    menu_items={
+        'Get Help': None,
+        'Report a bug': None,
+        'About': "한유 그룹 전용 AI 메일 요약 안내 서비스"
+    }
+)
 
 # DB 연결 및 테이블 생성
 def init_db():
