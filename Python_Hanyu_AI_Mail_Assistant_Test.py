@@ -10,17 +10,6 @@ import os
 import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 
-# 썸네일을 로고 이미지로 강제 고정
-st.set_page_config(
-    page_title="한유 AI 메일 비서",
-    page_icon="Logo_Hanyu.jpg",
-    menu_items={
-        'Get Help': None,
-        'Report a bug': None,
-        'About': "한유 그룹 전용 AI 메일 요약 안내 서비스"
-    }
-)
-
 # DB 연결 및 테이블 생성
 def init_db():
     conn = sqlite3.connect('Hanyu_Mail_Assistant.db')
