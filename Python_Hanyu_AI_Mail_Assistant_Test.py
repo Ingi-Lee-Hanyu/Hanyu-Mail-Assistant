@@ -174,7 +174,19 @@ else:
     # 사이드바 기능 추가
     with st.sidebar:
         st.header("사용자 정보")
-        st.info(f"**{st.session_state.display_name}**")
+        st.markdown(f"""
+            <div style='
+                text-align: center; 
+                background-color: #D1E3FF; 
+                color: #1A3482; 
+                padding: 10px; 
+                border-radius: 5px; 
+                font-weight: bold;
+                margin-bottom: 15px;
+            '>
+                {st.session_state.display_name}
+            </div>
+            """, unsafe_allow_html=True)
         
         if st.button("로그아웃", use_container_width=True):
             st.session_state.logged_in = False
