@@ -102,8 +102,8 @@ if not st.session_state.logged_in:
     pw_input = st.text_input("비밀번호", type="password")
     
     if st.button("로그인"):
-        # 임시로 책임님 계정 설정 (나중에 DB와 연동 가능)
-        if user_input == "iglee@hyskets.com" and pw_input == "Sis0303053!!": 
+        # 로그인 계정 설정 (나중에 DB와 연동 가능)
+        if user_input == "iglee@hyskets.com" and pw_input == "HanyuAIMailAssistant":  
             st.session_state.logged_in = True
             st.session_state.username = user_input
             st.session_state.display_name = "이인기 책임"
