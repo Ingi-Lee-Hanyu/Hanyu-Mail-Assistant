@@ -106,7 +106,7 @@ if not st.session_state.logged_in:
         if user_input == "iglee@hyskets.com" and pw_input == "HanyuMailAssistant":
             st.session_state.logged_in = True
             st.session_state.username = user_input
-            st.session_state.display_name = "한유 SK ETS | 이인기 책임"
+            st.session_state.display_name = "한유 SK ETS   |   이인기 책임"
             st.session_state.search_history = get_history(user_input)
             st.rerun() # 로그인 성공 시 화면을 새로고침해서 본 프로그램으로 진입
         else:
