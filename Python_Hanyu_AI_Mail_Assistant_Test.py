@@ -343,7 +343,7 @@ else:
                     mail_ids = messages[0].split()[::-1]
                     total_mails = len(mail_ids)
                     status_placeholder.empty()
-                    status_placeholder.success(f"메일함에서 총 {total_mails}개의 안 읽은 메일을 찾았습니다. 선택하신 기간에 해당하는 내용을 확인하도록 하겠습니다.")
+                    status_placeholder.success(f"메일함에서 총 {total_mails}개의 안 읽은 메일을 찾았습니다. 메일 내용을 확인하도록 하겠습니다.")
 
                     email_texts = []
 
