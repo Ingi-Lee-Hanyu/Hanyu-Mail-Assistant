@@ -338,7 +338,7 @@ else:
 
                 if status != "OK" or not messages[0]:
                     status_placeholder.empty()
-                    status_placeholder.warning(f"{start_date} 부터 {end_date} 사이에 처리할 안 읽은 메일이 없습니다.")
+                    status_placeholder.warning(f"{start_date} 부터 {end_date} 사이에 안 읽은 메일이 없습니다.")
                 else:
                     mail_ids = messages[0].split()[::-1]
                     total_mails = len(mail_ids)
