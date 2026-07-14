@@ -1,0 +1,15 @@
+name: Keep Streamlit Alive
+
+on:
+  schedule:
+    # 매일 6시간마다 한 번씩 실행 (UTC 기준)
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # 수동 실행도 가능하게 설정
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Streamlit App
+        run: |
+          curl -I https://hanyu-mail-assistant.streamlit.app/
