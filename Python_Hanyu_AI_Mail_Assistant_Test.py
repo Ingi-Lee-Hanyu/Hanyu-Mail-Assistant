@@ -328,7 +328,7 @@ else:
             search_criteria = f'(UNSEEN)'
 
             status_placeholder = st.empty()
-            status_placeholder.info("그룹웨어 메일함에서 안 읽은 메일을 확인 중입니다.")
+            status_placeholder.info("그룹웨어 메일함에서 안 읽은 메일을 확인하고 있습니다.")
             try:
                 mail = imaplib.IMAP4_SSL(IMAP_SERVER, 993)
                 mail.login(EMAIL_ACCOUNT, EMAIL_PASSWORD)
