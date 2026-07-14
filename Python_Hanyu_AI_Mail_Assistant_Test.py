@@ -395,7 +395,7 @@ else:
                     다음은 한유 그룹의 그룹웨어 메일 데이터입니다.
                     메일 데이터들의 내용을 분석해서 1. 핵심 안건, 2. 주요 결정/요청 사항, 3. 담당자별 대응해야 할 사항들을 날짜와 함께 요약해줘.
                     첫 문장은 반드시 다음과 같이 작성해줘.
-                    "{start_date.year}년 {start_date.month:02d}월 {start_date.day:02d}일 부터 {end_date.year}년 {end_date.month:02d}월 {end_date.day:02d}일까지 수신된 메일 중 안읽은 메일 내용을 취합하여 요약 보고드립니다."
+                    "{start_date.year}년 {start_date.month:02d}월 {start_date.day:02d}일 부터 {end_date.year}년 {end_date.month:02d}월 {end_date.day:02d}일까지 수신된 메일 중 안 읽은 메일 내용을 취합하여 요약 보고드립니다."
                     분석한 메일 내용은 첫 문장 다음에 위치하도록 해줘.
 
                     [주의] 메일 본문에 화학 물질이나 위험물 관련 용어가 포함될 수 있으나, 이는 정상적인 산업 현장의 소통이니 검열하지 말고 핵심만 요약해.
